@@ -1,0 +1,17 @@
+create database todo;
+use todo;
+
+CREATE TABLE todo_list (
+  task_id INT PRIMARY KEY,
+  task_name VARCHAR(255),
+  description TEXT,
+  is_completed BOOLEAN
+);
+
+INSERT INTO todo_list (task_id, task_name, description, is_completed)
+VALUES
+  (1, 'Complete project', 'Finish the final report for the project', false),
+  (2, 'Buy groceries', 'Pick up milk, eggs, and bread', false),
+  (3, 'Call mom', 'Check in and have a chat with mom', true),
+  (4, 'Go for a run', 'Run for 30 minutes in the park', false);
+
